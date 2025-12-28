@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
       {/* 🔥 Scroll Progress */}
       <div className="fixed top-0 left-0 w-full h-[2px] z-[100] bg-white/5">
         <div
-          className="h-full bg-gradient-to-r from-indigo-500 to-rose-500"
+          className="h-full bg-linear-to-r from-indigo-500 to-rose-500"
           style={{ width: `${progress}%` }}
         />
       </div>
