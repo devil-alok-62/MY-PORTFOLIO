@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* 🔥 Scroll Progress */}
-      <div className="fixed top-0 left-0 w-full h-[2px] z-[100] bg-white/5">
+      <div className="fixed top-0 left-0 w-full h-0.5 z-100 bg-white/5">
         <div
           className="h-full bg-linear-to-r from-indigo-500 to-rose-500"
           style={{ width: `${progress}%` }}
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
       </div>
 
       <nav
-        className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500
+        className={`fixed top-0 left-0 right-0 z-60 transition-all duration-500
         ${scrolled ? "py-4 glass border-b border-white/10" : "py-6"}`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
@@ -83,8 +83,8 @@ const Navbar: React.FC = () => {
                   {link.label}
                   {isActive && (
                     <>
-                      <span className="absolute -bottom-2 left-0 w-full h-[2px] bg-indigo-500" />
-                      <span className="absolute -bottom-2 left-0 w-full h-[2px] bg-indigo-500 blur-md opacity-70" />
+                      <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-indigo-500" />
+                      <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-indigo-500 blur-md opacity-70" />
                     </>
                   )}
                 </a>

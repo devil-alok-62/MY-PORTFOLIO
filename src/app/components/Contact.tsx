@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                   required
                   value={form.name}
                   onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  placeholder="Alok Kumar "
+                  placeholder="Your Name"
                   className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-indigo-500 transition-colors"
                 />
               </div>
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
                   type="email"
                   value={form.email}
                   onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  placeholder="alokraj@gmail.com"
+                  placeholder="Your Email"
                   className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-indigo-500 transition-colors"
                 />
               </div>

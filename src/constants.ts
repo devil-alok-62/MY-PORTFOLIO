@@ -2,26 +2,52 @@
 //About data
 export const EXPERIENCES = [
   {
-    period: "2025 - Present",
-    role: "Frontend Engineer",
-    company: "DevilCore Solutions",
-    description: "Building modern, scalable web applications using React, Next.js, and Tailwind CSS."
-  },
-  {
-    period: "2023 - 2024",
+    period: "2026 - Present",
+
     role: "Fullstack Developer",
     company: "TechNova Inc.",
     description: "Worked on AI-driven dashboards and real-time data visualization platforms."
   },
   {
-    period: "2021 - 2022",
+    period: "2024 - 2025",
+
+    role: "Frontend Engineer",
+    company: "DevilCore Solutions",
+    description: "Building modern, scalable web applications using React, Next.js, and Tailwind CSS."
+  },
+
+  {
+    period: "2023 - 2024",
     role: "Junior Developer",
     company: "WebCraft Studios",
     description: "Assisted in building responsive websites and interactive UI components."
   },
 ];
 
-
+export const SKILLS = [
+  { name: "HTML5", level: 95, category: "frontend" },
+  { name: "CSS3", level: 92, category: "frontend" },
+  { name: "JavaScript", level: 90, category: "frontend" },
+  { name: "React.js", level: 88, category: "frontend" },
+  { name: "Next.js", level: 85, category: "frontend" },
+  { name: "TypeScript", level: 82, category: "frontend" },
+  { name: "Tailwind CSS", level: 90, category: "frontend" },
+  { name: "shadcn/ui", level: 78, category: "frontend" },
+  { name: "Redux", level: 75, category: "frontend" },
+  { name: "Component Architecture", level: 85, category: "frontend" },
+  { name: "Responsive Design", level: 92, category: "frontend" },
+  { name: "Node.js", level: 72, category: "backend" },
+  { name: "Express.js", level: 70, category: "backend" },
+  { name: "MongoDB", level: 68, category: "backend" },
+  { name: "Mongoose", level: 65, category: "backend" },
+  { name: "CRUD Operations", level: 75, category: "backend" },
+  { name: "Authentication Basics", level: 70, category: "backend" },
+  { name: "API Integration", level: 78, category: "backend" },
+  { name: "Database Design Basics", level: 65, category: "backend" },
+  { name: "REST API", level: 72, category: "backend" },
+  { name: "Git", level: 88, category: "tools" },
+  { name: "GitHub", level: 90, category: "tools" },
+];
 
 // projects data
 export const PROJECTS = [
