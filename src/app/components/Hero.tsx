@@ -25,9 +25,9 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
-            I'm a Frontend Engineer specializing in building modern, scalable,
-            and AI-driven web applications that push the boundaries of what's
-            possible on the web.
+            I'm a Full Stack Developer focused on building modern, scalable, and
+            user-friendly web applications with clean design and efficient
+            solutions.
           </p>
 
           <div className="flex flex-wrap gap-4">

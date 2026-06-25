@@ -1,4 +1,3 @@
-
 //About data
 export const EXPERIENCES = [
   {
@@ -6,21 +5,24 @@ export const EXPERIENCES = [
 
     role: "Fullstack Developer",
     company: "TechNova Inc.",
-    description: "Worked on AI-driven dashboards and real-time data visualization platforms."
+    description:
+      "Worked on AI-driven dashboards and real-time data visualization platforms.",
   },
   {
     period: "2024 - 2025",
 
     role: "Frontend Engineer",
     company: "DevilCore Solutions",
-    description: "Building modern, scalable web applications using React, Next.js, and Tailwind CSS."
+    description:
+      "Building modern, scalable web applications using React, Next.js, and Tailwind CSS.",
   },
 
   {
     period: "2023 - 2024",
     role: "Junior Developer",
     company: "WebCraft Studios",
-    description: "Assisted in building responsive websites and interactive UI components."
+    description:
+      "Assisted in building responsive websites and interactive UI components.",
   },
 ];
 
@@ -33,7 +35,8 @@ export const SKILLS = [
   { name: "TypeScript", level: 82, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "shadcn/ui", level: 78, category: "frontend" },
-  { name: "Redux", level: 75, category: "frontend" },
+  { name: "Redux", level: 65, category: "frontend" },
+  { name: "Clerk", level: 88, category: "frontend" },
   { name: "Component Architecture", level: 85, category: "frontend" },
   { name: "Responsive Design", level: 92, category: "frontend" },
   { name: "Node.js", level: 72, category: "backend" },
@@ -53,33 +56,35 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "DevilCore Portfolio",
-    description: "A modern full-stack portfolio built with Next.js, Tailwind CSS, and Framer Motion animations.",
-    image: "https://picsum.photos/seed/devilcore/600/400",
-    tags: ["Next.js", "Tailwind", "React"],
-    githubUrl: "https://github.com/yourusername/devilcore",
-    liveUrl: "https://devilcore.vercel.app",
+    title: "WorkSync",
+    description:
+      "Work Sync is a full-stack productivity application built for efficient project and task management. Users can create, update, and track tasks, manage project workflows, monitor task status, organize priorities, collaborate with team members, and access all work activities through a secure authentication-based dashboard.",
+    image: "/WorkSync.png",
+    tags: ["Next.js", "TypeScript", "shadcn/ui", "MongoDB", "NextAuth"],
+    githubUrl: "https://github.com/devil-alok-62/WorkSync.git",
+    liveUrl: "https://work-sync-devil.vercel.app/",
   },
   {
     id: 2,
-    title: "ChatGPT Clone",
-    description: "A conversational AI chatbot using OpenAI API and a sleek UI built with Next.js.",
-    image: "https://picsum.photos/seed/chatgpt/600/400",
-    tags: ["React", "AI", "Next.js"],
-    githubUrl: "https://github.com/yourusername/chatgpt-clone",
-    liveUrl: "https://chatgpt-clone.vercel.app",
+    title: "Weather App",
+    description:
+      "A modern weather application that provides real-time weather information, including temperature, humidity, wind speed, and current weather conditions. It helps users quickly check climate details with a clean and easy-to-use interface.",
+    image: "/Weather.png",
+    tags: ["Html", "css", "JavaScript"],
+    githubUrl: "https://github.com/devil-alok-62/Weather-App.git",
+    liveUrl: "https://weather-appdevil.vercel.app/",
   },
   {
     id: 3,
-    title: "Data Dashboard",
-    description: "Interactive data visualization dashboard using D3.js and React for analytics.",
-    image: "https://picsum.photos/seed/dashboard/600/400",
-    tags: ["D3.js", "React", "Data"],
-    githubUrl: "https://github.com/yourusername/data-dashboard",
+    title: "Quiz-App",
+    description:
+      "A responsive quiz application where users can answer questions, track their performance, and improve their knowledge through an interactive experience.",
+    image: "Quiz-App.png",
+    tags: [],
+    githubUrl: "https://github.com/devil-alok-62/Quiz-App.git",
     liveUrl: null,
   },
 ];
-
 
 //contact info
 export const CONTACT_INFO = {
@@ -90,5 +95,3 @@ export const CONTACT_INFO = {
   instagram: "https://www.instagram.com/devil_alok_62/",
   linkedin: "https://www.linkedin.com/in/devil-alok-62",
 };
-
-
