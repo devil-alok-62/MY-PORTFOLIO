@@ -1,19 +1,62 @@
 "use client";
 import React, { useState } from "react";
 import { CONTACT_INFO } from "./../../constants";
+import type { FormEvent } from "react";
 
 const Contact: React.FC = () => {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [status, setStatus] = useState<null | "success" | "error">(null);
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Simulate sending message
-    setStatus("success");
-    setTimeout(() => setStatus(null), 3000);
-    setForm({ name: "", email: "", message: "" });
-  };
+    // Purana success message clear karo
+    setStatus("");
 
+    try {
+      // Backend API ko form data bhejo
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      // Agar email send nahi hua
+      if (!response.ok || !data.success) {
+        throw new Error(data.error || "Something went wrong.");
+      }
+
+      // Success message show karo
+      setStatus("success");
+
+      {
+        status === "error" && (
+          <p className="text-center text-red-400 font-medium">
+            Message could not be sent. Please try again.
+          </p>
+        )
+      }
+
+      // Form ke saare fields clear karo
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Contact form submission failed:", error);
+
+      setStatus("error");
+    }
+  };
   return (
     <section id="contact" className="min-h-screen flex items-center py-24">
       <div className="container mx-auto px-6 w-full">
