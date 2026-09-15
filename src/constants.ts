@@ -45,7 +45,11 @@ export const SKILLS = [
   { name: "API Integration", level: 88, category: "backend" },
   { name: "Database Design Basics", level: 85, category: "backend" },
   { name: "REST API", level: 82, category: "backend" },
+<<<<<<< HEAD
   { name: "Email Integration", level: 100, category: "backend" },
+=======
+  { name: "Email Integration", level: 80, category: "backend" },
+>>>>>>> ff12672 (feat: add Gmail contact form integration)
   { name: "Git", level: 88, category: "tools" },
   { name: "GitHub", level: 90, category: "tools" },
 ];
