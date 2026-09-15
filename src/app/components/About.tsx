@@ -52,7 +52,12 @@ const About: React.FC = () => {
       <motion.div
         className="absolute bottom-10 left-0 w-96 h-96 bg-rose-500/10 rounded-full blur-3xl pointer-events-none"
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
       />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -84,8 +89,8 @@ const About: React.FC = () => {
               variants={staggerItem}
               className="text-gray-400 leading-relaxed"
             >
-              Frontend engineer with full-stack roots — crafting fast, accessible,
-              and visually polished web experiences.
+              Full-Stack Developer building seamless digital experiences with
+              powerful backends, intuitive interfaces, and scalable solutions.
             </motion.p>
           </motion.div>
 
@@ -135,9 +140,9 @@ const About: React.FC = () => {
               Philosophy
             </p>
             <p className="text-gray-300 leading-relaxed text-lg relative z-10">
-              I believe code is a medium for art. Every pixel should have purpose,
-              every interaction should feel natural — efficiency means making the
-              user&apos;s life simpler.
+              I believe code is a medium for art. Every pixel should have
+              purpose, every interaction should feel natural — efficiency means
+              making the user&apos;s life simpler.
             </p>
             <div className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-indigo-500 via-purple-500 to-pink-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500" />
           </motion.div>
@@ -222,7 +227,9 @@ const About: React.FC = () => {
                       }}
                     >
                       <div className="flex justify-between items-center mb-1.5">
-                        <span className="text-sm text-gray-300">{skill.name}</span>
+                        <span className="text-sm text-gray-300">
+                          {skill.name}
+                        </span>
                         <motion.span
                           className="text-[11px] font-bold text-indigo-400"
                           initial={{ opacity: 0 }}
