@@ -53,6 +53,7 @@ export const SKILLS = [
   { name: "Email Integration", level: 80, category: "backend" },
   { name: "Git", level: 88, category: "tools" },
   { name: "GitHub", level: 90, category: "tools" },
+  { name: "Python", level: 42, category: "backend" },
 ];
 
 // projects data
