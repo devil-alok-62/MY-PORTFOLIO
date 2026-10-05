@@ -1,8 +1,25 @@
 "use client";
+
 import React from "react";
+import Link from "next/link";
 import { PROJECTS } from "../../constants";
+import { useRouter } from "next/navigation";
 
 const Projects: React.FC = () => {
+  const router = useRouter();
+
+  const handleProjectsClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    if (!document.startViewTransition) {
+      router.push("/projects");
+      return;
+    }
+
+    document.startViewTransition(() => {
+      router.push("/projects");
+    });
+  };
   return (
     <section
       id="projects"
@@ -15,16 +32,20 @@ const Projects: React.FC = () => {
             <h2 className="text-4xl font-bold mb-4 font-heading">
               Featured Works
             </h2>
+
             <p className="text-gray-400 max-w-md">
               Selection of projects that showcase my technical skills and design
               thinking.
             </p>
           </div>
-          <a
-            href="#"
+
+          <Link
+            href="/projects"
+            onClick={handleProjectsClick}
             className="text-indigo-400 hover:text-indigo-300 font-semibold flex items-center gap-2 group transition-all"
           >
             View All Projects
+
             <svg
               className="w-5 h-5 group-hover:translate-x-1 transition-transform"
               fill="none"
@@ -38,12 +59,11 @@ const Projects: React.FC = () => {
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>
-          </a>
-        </div>
+          </Link>        </div>
 
-        {/* Projects Grid */}
+        {/* Only 3 Projects */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PROJECTS.map((project) => (
+          {PROJECTS.slice(0, 3).map((project) => (
             <div
               key={project.id}
               className="group relative glass rounded-3xl overflow-hidden hover:scale-[1.02] transition-all duration-500 border border-white/5 hover:border-white/20"
@@ -55,6 +75,7 @@ const Projects: React.FC = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
                 />
               </div>
+
               <div className="p-8">
                 {/* Tags */}
                 <div className="flex gap-2 mb-4 flex-wrap">
@@ -69,6 +90,7 @@ const Projects: React.FC = () => {
                 </div>
 
                 <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
+
                 <p className="text-gray-400 text-sm mb-6 line-clamp-2">
                   {project.description}
                 </p>

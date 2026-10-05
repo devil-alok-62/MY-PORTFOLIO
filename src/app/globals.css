@@ -32,3 +32,36 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Smooth page transition */
+::view-transition-old(root) {
+  animation: page-out 0.25s ease;
+}
+
+::view-transition-new(root) {
+  animation: page-in 0.35s ease;
+}
+
+@keyframes page-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
