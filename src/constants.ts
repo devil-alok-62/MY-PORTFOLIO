@@ -27,6 +27,7 @@ export const EXPERIENCES = [
 ];
 
 export const SKILLS = [
+  // Frontend
   { name: "HTML5", level: 95, category: "frontend" },
   { name: "CSS3", level: 92, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
@@ -36,11 +37,12 @@ export const SKILLS = [
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "shadcn/ui", level: 88, category: "frontend" },
   { name: "Redux", level: 83, category: "frontend" },
-  { name: "shadcn/ui", level: 78, category: "frontend" },
-  { name: "Redux", level: 65, category: "frontend" },
+  { name: "Recharts", level: 75, category: "frontend" },
   { name: "Clerk", level: 88, category: "frontend" },
   { name: "Component Architecture", level: 85, category: "frontend" },
   { name: "Responsive Design", level: 92, category: "frontend" },
+
+  // Backend
   { name: "Node.js", level: 72, category: "backend" },
   { name: "Express.js", level: 70, category: "backend" },
   { name: "MongoDB", level: 94, category: "backend" },
@@ -51,25 +53,21 @@ export const SKILLS = [
   { name: "Database Design Basics", level: 85, category: "backend" },
   { name: "REST API", level: 82, category: "backend" },
   { name: "Email Integration", level: 80, category: "backend" },
+  { name: "NextAuth.js", level: 75, category: "backend" },
+  { name: "Python", level: 42, category: "backend" },
+
+  // Tools
   { name: "Git", level: 88, category: "tools" },
   { name: "GitHub", level: 90, category: "tools" },
-  { name: "Python", level: 42, category: "backend" },
+  { name: "Cloudinary", level: 75, category: "tools" },
+  { name: "Vercel", level: 80, category: "tools" },
+  { name: "Postman", level: 75, category: "tools" },
+  { name: "Razorpay", level: 65, category: "tools" },
 ];
-
 // projects data
 export const PROJECTS = [
   {
     id: 1,
-    title: "WorkSync",
-    description:
-      "Work Sync is a full-stack productivity application built for efficient project and task management. Users can create, update, and track tasks, manage project workflows, monitor task status, organize priorities, collaborate with team members, and access all work activities through a secure authentication-based dashboard.",
-    image: "/WorkSync.png",
-    tags: ["Next.js", "TypeScript", "shadcn/ui", "MongoDB", "NextAuth"],
-    githubUrl: "https://github.com/devil-alok-62/WorkSync.git",
-    liveUrl: "https://work-sync-devil.vercel.app/",
-  },
-  {
-    id: 2,
     title: "Weather App",
     description:
       "A modern weather application that provides real-time weather information, including temperature, humidity, wind speed, and current weather conditions. It helps users quickly check climate details with a clean and easy-to-use interface.",
@@ -79,14 +77,49 @@ export const PROJECTS = [
     liveUrl: "https://weather-appdevil.vercel.app/",
   },
   {
+    id: 2,
+    title: "Food Delivery",
+    description:
+      "A responsive food delivery application where users can browse restaurants, view menus, and place orders with a seamless experience.",
+    image: "Food-Delivery.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Razorpay",
+    ],
+    githubUrl: "https://github.com/devil-alok-62/food-delivery-app",
+    liveUrl: "https://devil-food-delivery.vercel.app/",
+  },
+  {
     id: 3,
+    title: "WorkSync",
+    description:
+      "Work Sync is a full-stack productivity application built for efficient project and task management. Users can create, update, and track tasks, manage project workflows, monitor task status, organize priorities, collaborate with team members, and access all work activities through a secure authentication-based dashboard.",
+    image: "/WorkSync.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "MongoDB",
+      "NextAuth",
+      "Cloudinary",
+      "Recharts",
+    ],
+    githubUrl: "https://github.com/devil-alok-62/WorkSync.git",
+    liveUrl: "https://work-sync-devil.vercel.app/",
+  },
+  {
+    id: 4,
     title: "Quiz-App",
     description:
       "A responsive quiz application where users can answer questions, track their performance, and improve their knowledge through an interactive experience.",
     image: "Quiz-App.png",
-    tags: [],
+    tags: ["Html", "css", "JavaScript"],
     githubUrl: "https://github.com/devil-alok-62/Quiz-App.git",
-    liveUrl: null,
+    liveUrl: "https://devil-quiz-app.vercel.app/",
   },
 ];
 
