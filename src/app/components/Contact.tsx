@@ -142,7 +142,7 @@ const Contact: React.FC = () => {
               <div className="flex gap-4">
                 {[
                   { name: "Github", href: CONTACT_INFO.github },
-                  { name: "Youtube", href: CONTACT_INFO.youtube },
+                  { name: "LinkedIn", href: CONTACT_INFO.linkedin },
                   { name: "Instagram", href: CONTACT_INFO.instagram },
                 ].map((social) => (
                   <a

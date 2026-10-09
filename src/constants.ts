@@ -129,6 +129,6 @@ export const CONTACT_INFO = {
   phone: "+91 62993 75718",
   github: "https://github.com/devil-alok-62",
   youtube: "https://www.youtube.com/@DEVILALOK62",
-  instagram: "https://www.instagram.com/devil_alok_62/",
-  linkedin: "https://www.linkedin.com/in/devil-alok-62",
+  instagram: "https://www.instagram.com/alok_kr_62/",
+  linkedin: "https://www.linkedin.com/in/alok-gupta-developer/",
 };
